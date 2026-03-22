@@ -1,5 +1,3 @@
-/* https://obsmusicwidget.vercel.app/547951620235984906 */
-
 @font-face {
   font-family: TahomaBit;
   src: url('https://cdn.jsdelivr.net/gh/HooferDevelops/hoofer-obs-setup@main/TahomaBit.ttf');
@@ -34,7 +32,7 @@ body > div.flex {
     border-radius: 50% !important; /* Turns the square into a circle */
     border: 8px solid #111 !important; /* Adds the thick black outer edge of a record */
     box-shadow: inset 0 0 0 2px #333 !important; /* Adds a subtle inner groove line */
-    animation: spin 4s linear infinite !important; /* Adjust the '4s' to make it spin faster or slower */
+    animation: spin 16s linear infinite !important; /* Adjust the '4s' to make it spin faster or slower */
 }
 
 /* Global Font & Reset */

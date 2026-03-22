@@ -1,0 +1,10 @@
+@font-face {
+  font-family: TahomaBit;
+  src: url('https://cdn.jsdelivr.net/gh/HooferDevelops/hoofer-obs-setup@main/TahomaBit.ttf');
+}
+
+* {
+  font-family: TahomaBit;
+}
+
+body { background-color: rgba(0, 0, 0, 0); margin: 0px auto;  overflow: hidden;}

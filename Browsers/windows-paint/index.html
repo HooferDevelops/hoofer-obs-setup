@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro Pixel Paint</title>
+    <style>
+        body {
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #app-container {
+            background-color: #ece9d8; /* Classic Windows XP window color */
+            padding: 2px;
+        }
+
+        /* The Black Canvas */
+        canvas {
+            background-color: #000000;
+            cursor: crosshair;
+            display: block;
+            /* Forces the browser not to blur the pixels when scaled */
+            image-rendering: pixelated; 
+        }
+
+        /* Toolbar Styling */
+        #toolbar {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+            background-color: #ece9d8;
+            border-top: 1px solid #fff;
+            gap: 15px;
+        }
+
+        /* Current Color Indicator */
+        #color-indicator-box {
+            width: 32px;
+            height: 32px;
+            border-top: 2px solid #808080;
+            border-left: 2px solid #808080;
+            border-bottom: 2px solid #ffffff;
+            border-right: 2px solid #ffffff;
+            background-color: #ffffff; /* Defaults to white */
+        }
+
+        /* Palette Grid */
+        #palette {
+            display: grid;
+            grid-template-columns: repeat(14, 16px);
+            grid-template-rows: repeat(2, 16px);
+            gap: 1px;
+        }
+
+        .swatch {
+            width: 16px;
+            height: 16px;
+            box-sizing: border-box;
+            /* Classic 3D inset border */
+            border-top: 1px solid #808080;
+            border-left: 1px solid #808080;
+            border-bottom: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+            cursor: pointer;
+        }
+
+        .swatch:active {
+            border-top: 1px solid #000;
+            border-left: 1px solid #000;
+        }
+
+        /* Clear Button */
+        button {
+            padding: 4px 12px;
+            background-color: #ece9d8;
+            border-top: 1px solid #ffffff;
+            border-left: 1px solid #ffffff;
+            border-bottom: 1px solid #808080;
+            border-right: 1px solid #808080;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        button:active {
+            border-top: 1px solid #808080;
+            border-left: 1px solid #808080;
+            border-bottom: 1px solid #ffffff;
+            border-right: 1px solid #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="app-container">
+        <canvas id="paintCanvas" width="688" height="570"></canvas>
+        
+        <div id="toolbar">
+            <div id="color-indicator-box"></div>
+            <div id="palette"></div>
+            <button id="clearBtn">Clear</button>
+        </div>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('paintCanvas');
+        const ctx = canvas.getContext('2d');
+        const colorIndicator = document.getElementById('color-indicator-box');
+        const paletteContainer = document.getElementById('palette');
+        const clearBtn = document.getElementById('clearBtn');
+
+        // Disable standard smoothing to keep lines jagged
+        ctx.imageSmoothingEnabled = false;
+
+        // Initialize Canvas with Black
+        ctx.fillStyle = '#000000';
+        ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+        // State
+        let isDrawing = false;
+        let currentColor = '#FFFFFF'; // Start drawing with white since background is black
+        let lastX = 0;
+        let lastY = 0;
+        const pixelSize = 2; // Adjust this to make the brush chunkier (e.g., 3 or 4)
+
+        // Exact Colors from your image
+        const colors = [
+            // Top Row
+            '#000000', '#808080', '#800000', '#808000', '#008000', '#008080', '#000080', '#800080', '#808040', '#004040', '#0080FF', '#004080', '#8000FF', '#804000',
+            // Bottom Row
+            '#FFFFFF', '#C0C0C0', '#FF0000', '#FFFF00', '#00FF00', '#00FFFF', '#0000FF', '#FF00FF', '#FFFF80', '#00FF80', '#80FFFF', '#8080FF', '#FF0080', '#FF8040'
+        ];
+
+        // Build the color palette
+        colors.forEach(color => {
+            const swatch = document.createElement('div');
+            swatch.className = 'swatch';
+            swatch.style.backgroundColor = color;
+            swatch.addEventListener('click', () => {
+                currentColor = color;
+                colorIndicator.style.backgroundColor = color;
+            });
+            paletteContainer.appendChild(swatch);
+        });
+
+        // Drawing Logic (Bresenham-style interpolation for jagged lines without gaps)
+        function drawPixelatedLine(x1, y1, x2, y2) {
+            const dx = x2 - x1;
+            const dy = y2 - y1;
+            // Use the maximum distance on either axis to determine steps
+            const steps = Math.max(Math.abs(dx), Math.abs(dy)); 
+
+            for (let i = 0; i <= steps; i++) {
+                const x = x1 + (dx * i) / steps;
+                const y = y1 + (dy * i) / steps;
+                ctx.fillStyle = currentColor;
+                // Draw a discrete square block at every step
+                ctx.fillRect(Math.floor(x), Math.floor(y), pixelSize, pixelSize);
+            }
+        }
+
+        // Mouse Events
+        canvas.addEventListener('mousedown', (e) => {
+            isDrawing = true;
+            const rect = canvas.getBoundingClientRect();
+            lastX = e.clientX - rect.left;
+            lastY = e.clientY - rect.top;
+            
+            // Draw a single dot on click
+            ctx.fillStyle = currentColor;
+            ctx.fillRect(Math.floor(lastX), Math.floor(lastY), pixelSize, pixelSize);
+        });
+
+        canvas.addEventListener('mousemove', (e) => {
+            if (!isDrawing) return;
+            const rect = canvas.getBoundingClientRect();
+            const currentX = e.clientX - rect.left;
+            const currentY = e.clientY - rect.top;
+            
+            drawPixelatedLine(lastX, lastY, currentX, currentY);
+            
+            lastX = currentX;
+            lastY = currentY;
+        });
+
+        canvas.addEventListener('mouseup', () => isDrawing = false);
+        canvas.addEventListener('mouseout', () => isDrawing = false);
+
+        // Clear Button
+        clearBtn.addEventListener('click', () => {
+            ctx.fillStyle = '#000000';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+        });
+    </script>
+</body>
+</html>

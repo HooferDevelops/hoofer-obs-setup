@@ -1,0 +1,69 @@
+/* https://kelvinph.github.io/SpotiStream/overlay.html?theme=spotify&disc=200&bar=6&radius=0&blur=0&pad=0&outline=0&showstatus=0&shadow=0&accent=%23166aee&text=%23000000&muted=%23404040&panel=rgba%28236%2C233%2C216%2C1%29 */
+
+* {
+box-shadow: none !important;
+}
+
+.time {
+font-size: 24px !important;
+}
+
+.title {
+font-size: 28px !important;
+}
+
+.artist {
+font-size: 24px !important;
+}
+
+/* XP-style progress track */
+.progress {
+  height: 24px !important;
+  padding: 2px !important;
+  background: #ffffff !important;
+  border: 1px solid #7f9db9 !important;
+  border-radius: 3px !important;
+  box-sizing: border-box !important;
+
+  /* subtle inset look */
+  box-shadow:
+    inset 1px 1px 0 #cfcfcf,
+    inset -1px -1px 0 #f3f3f3 !important;
+}
+
+/* fill element */
+.progress > * {
+  height: 100% !important;
+  border-radius: 1px !important;
+  box-sizing: border-box !important;
+
+  /* XP green chunks */
+  background:
+    repeating-linear-gradient(
+      to right,
+      #7ef07e 0px,
+      #7ef07e 8px,
+      #4fd44f 8px,
+      #4fd44f 10px,
+      transparent 10px,
+      transparent 12px
+    ) !important;
+
+  /* glossy top highlight */
+  box-shadow:
+    inset 0 1px 0 #caffca,
+    inset 0 -1px 0 #2ea62e !important;
+}
+
+@font-face {
+  font-family: TahomaBit;
+  src: url('https://cdn.jsdelivr.net/gh/HooferDevelops/hoofer-obs-setup@main/TahomaBit.ttf');
+}
+
+* {
+    font-family: TahomaBit !important;
+}
+
+.inner {
+margin: 20px;
+}

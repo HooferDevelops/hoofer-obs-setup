@@ -2059,10 +2059,10 @@
     "current_transition": "Fade",
     "transition_duration": 300,
     "preview_locked": false,
-    "scaling_enabled": false,
-    "scaling_level": -9,
-    "scaling_off_x": 0.0,
-    "scaling_off_y": 0.0,
+    "scaling_enabled": true,
+    "scaling_level": 0,
+    "scaling_off_x": 616.0,
+    "scaling_off_y": 258.0,
     "virtual-camera": {
         "type2": 3
     },
@@ -4058,8 +4058,8 @@
                 }
             ],
             "saveWindowGeo": false,
-            "windowPosX": 2837,
-            "windowPosY": 468,
+            "windowPosX": 3369,
+            "windowPosY": 384,
             "windowWidth": 1000,
             "windowHeight": 600,
             "macroListMacroEditSplitterPosition": [
@@ -6717,7 +6717,7 @@
                             "duration": 0
                         },
                         "private_settings": {
-                            "collapsed": false
+                            "collapsed": true
                         }
                     }
                 ]
@@ -7135,12 +7135,12 @@
                         "id": 81,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 426.0,
-                            "y": 134.0
+                            "x": 422.0,
+                            "y": 105.0
                         },
                         "pos_rel": {
-                            "x": -1.1861110925674438,
-                            "y": -0.8140038251876831
+                            "x": -1.1916667222976685,
+                            "y": -0.8538233637809753
                         },
                         "scale": {
                             "x": 1.0,
@@ -9182,12 +9182,15 @@
             "versioned_id": "browser_source",
             "settings": {
                 "undo_uuid": "feb6d7cc-5e3d-400b-8bee-2bdb1477ed2d",
-                "url": "https://kelvinph.github.io/SpotiStream/overlay.html?theme=spotify&disc=200&bar=6&radius=0&blur=0&pad=0&outline=0&showstatus=0&shadow=0&accent=%23166aee&text=%23000000&muted=%23404040&panel=rgba%28236%2C233%2C216%2C1%29",
+                "url": "https://obsmusicwidget.vercel.app/547951620235984906",
                 "width": 850,
                 "height": 200,
-                "restart_when_active": false,
-                "css": "* {\nbox-shadow: none !important;\n}\n\n.time {\nfont-size: 24px !important;\n}\n\n.title {\nfont-size: 28px !important;\n}\n\n.artist {\nfont-size: 24px !important;\n}\n\n/* XP-style progress track */\n.progress {\n  height: 24px !important;\n  padding: 2px !important;\n  background: #ffffff !important;\n  border: 1px solid #7f9db9 !important;\n  border-radius: 3px !important;\n  box-sizing: border-box !important;\n\n  /* subtle inset look */\n  box-shadow:\n    inset 1px 1px 0 #cfcfcf,\n    inset -1px -1px 0 #f3f3f3 !important;\n}\n\n/* fill element */\n.progress > * {\n  height: 100% !important;\n  border-radius: 1px !important;\n  box-sizing: border-box !important;\n\n  /* XP green chunks */\n  background:\n    repeating-linear-gradient(\n      to right,\n      #7ef07e 0px,\n      #7ef07e 8px,\n      #4fd44f 8px,\n      #4fd44f 10px,\n      transparent 10px,\n      transparent 12px\n    ) !important;\n\n  /* glossy top highlight */\n  box-shadow:\n    inset 0 1px 0 #caffca,\n    inset 0 -1px 0 #2ea62e !important;\n}\n\n@font-face {\n  font-family: TahomaBit;\n  src: url('https://cdn.jsdelivr.net/gh/HooferDevelops/hoofer-obs-setup@main/TahomaBit.ttf');\n}\n\n* {\n    font-family: TahomaBit !important;\n}\n\n.inner {\nmargin: 20px;\n}",
-                "reroute_audio": false
+                "restart_when_active": true,
+                "reroute_audio": false,
+                "shutdown": true,
+                "fps_custom": true,
+                "fps": 30,
+                "css": "@font-face {\n  font-family: TahomaBit;\n  src: url('https://cdn.jsdelivr.net/gh/HooferDevelops/hoofer-obs-setup@main/TahomaBit.ttf');\n}\n\nbody {\nbackground: #ece9d8 !important;\noverflow: hidden;\n}\n\np {\ncolor: #000 !important;\n}\n\n/* 1. Fix Background & Center Contents */\n/* Removes the dark background/border and centers the items vertically */\nbody > div.flex {\n    background: transparent !important; \n    border: none !important; \n    box-shadow: none !important;\n    align-items: center !important; \n    width: 100%;\n}\n\n/* 2. Spinning Vinyl Record Effect */\n@keyframes spin {\n    100% { transform: rotate(360deg); }\n}\n\n/* Targets the album art image */\n.flex-shrink-0 img {\n    border-radius: 50% !important; /* Turns the square into a circle */\n    border: 8px solid #111 !important; /* Adds the thick black outer edge of a record */\n    box-shadow: inset 0 0 0 2px #333 !important; /* Adds a subtle inner groove line */\n    animation: spin 4s linear infinite !important; /* Adjust the '4s' to make it spin faster or slower */\n}\n\n/* Global Font & Reset */\n* {\n    font-family: TahomaBit !important;\n    box-shadow: none !important;\n}\n\n/* Title */\np.text-5xl {\n    font-size: 28px !important;\n}\n\n/* Artist */\np.text-3xl {\n    font-size: 24px !important;\n}\n\n/* XP-style progress track container */\n.pr-16 > div.w-full {\n  height: 32px !important;\n  padding: 2px !important;\n  background: #ffffff !important;\n  border: 1px solid #7f9db9 !important;\n  border-radius: 3px !important; /* Overrides the new rounded-full */\n  box-sizing: border-box !important;\n\n  /* Subtle inset look */\n  box-shadow:\n    inset 1px 1px 0 #cfcfcf,\n    inset -1px -1px 0 #f3f3f3 !important;\n}\n\n/* Progress track fill element */\n.pr-16 > div.w-full > div {\n  height: 100% !important;\n  border-radius: 1px !important;\n  box-sizing: border-box !important;\n\n  /* XP green chunks - UPDATED FOR WIDER BLOCKS */\n  background:\n    repeating-linear-gradient(\n      to right,\n      #7ef07e 0px,\n      #7ef07e 16px,     /* Width of the main light green block */\n      #4fd44f 16px,\n      #4fd44f 18px,     /* Width of the darker green right edge */\n      transparent 18px,\n      transparent 20px  /* Width of the transparent gap between blocks */\n    ) !important;\n\n  /* Glossy top highlight */\n  box-shadow:\n    inset 0 1px 0 #caffca,\n    inset 0 -1px 0 #2ea62e !important;\n}"
             },
             "mixers": 255,
             "sync": 0,
@@ -9936,8 +9939,8 @@
                 "live_title": "index.html - Visual Studio Code",
                 "local_file": "O:/Projects/hoofer-obs-setup/Browsers/windows-xp-frame/index.html",
                 "url": "\"E:\\Downloads\\windows-xp-frame\\index.html\"",
-                "width": 2115,
-                "height": 1105,
+                "width": 2112,
+                "height": 1175,
                 "css": "body { background: transparent; margin: 0; overflow: hidden; }"
             },
             "mixers": 255,

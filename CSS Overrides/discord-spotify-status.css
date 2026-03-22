@@ -1,0 +1,93 @@
+/* https://obsmusicwidget.vercel.app/547951620235984906 */
+
+@font-face {
+  font-family: TahomaBit;
+  src: url('https://cdn.jsdelivr.net/gh/HooferDevelops/hoofer-obs-setup@main/TahomaBit.ttf');
+}
+
+body {
+background: #ece9d8 !important;
+overflow: hidden;
+}
+
+p {
+color: #000 !important;
+}
+
+/* 1. Fix Background & Center Contents */
+/* Removes the dark background/border and centers the items vertically */
+body > div.flex {
+    background: transparent !important; 
+    border: none !important; 
+    box-shadow: none !important;
+    align-items: center !important; 
+    width: 100%;
+}
+
+/* 2. Spinning Vinyl Record Effect */
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+
+/* Targets the album art image */
+.flex-shrink-0 img {
+    border-radius: 50% !important; /* Turns the square into a circle */
+    border: 8px solid #111 !important; /* Adds the thick black outer edge of a record */
+    box-shadow: inset 0 0 0 2px #333 !important; /* Adds a subtle inner groove line */
+    animation: spin 4s linear infinite !important; /* Adjust the '4s' to make it spin faster or slower */
+}
+
+/* Global Font & Reset */
+* {
+    font-family: TahomaBit !important;
+    box-shadow: none !important;
+}
+
+/* Title */
+p.text-5xl {
+    font-size: 28px !important;
+}
+
+/* Artist */
+p.text-3xl {
+    font-size: 24px !important;
+}
+
+/* XP-style progress track container */
+.pr-16 > div.w-full {
+  height: 32px !important;
+  padding: 2px !important;
+  background: #ffffff !important;
+  border: 1px solid #7f9db9 !important;
+  border-radius: 3px !important; /* Overrides the new rounded-full */
+  box-sizing: border-box !important;
+
+  /* Subtle inset look */
+  box-shadow:
+    inset 1px 1px 0 #cfcfcf,
+    inset -1px -1px 0 #f3f3f3 !important;
+}
+
+/* Progress track fill element */
+.pr-16 > div.w-full > div {
+  height: 100% !important;
+  border-radius: 1px !important;
+  box-sizing: border-box !important;
+
+  /* XP green chunks - UPDATED FOR WIDER BLOCKS */
+  background:
+    repeating-linear-gradient(
+      to right,
+      #7ef07e 0px,
+      #7ef07e 16px,     /* Width of the main light green block */
+      #4fd44f 16px,
+      #4fd44f 18px,     /* Width of the darker green right edge */
+      transparent 18px,
+      transparent 20px  /* Width of the transparent gap between blocks */
+    ) !important;
+
+  /* Glossy top highlight */
+  box-shadow:
+    inset 0 1px 0 #caffca,
+    inset 0 -1px 0 #2ea62e !important;
+}

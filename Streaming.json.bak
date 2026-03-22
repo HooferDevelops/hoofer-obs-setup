@@ -121,8 +121,8 @@
             }
         ]
     },
-    "current_scene": "Primary",
-    "current_program_scene": "Primary",
+    "current_scene": "Drawing",
+    "current_program_scene": "Drawing",
     "scene_order": [
         {
             "name": "Primary"
@@ -813,10 +813,10 @@
             "id": "group",
             "versioned_id": "group",
             "settings": {
+                "id_counter": 0,
                 "custom_size": true,
                 "cx": 438,
                 "cy": 60,
-                "id_counter": 0,
                 "items": [
                     {
                         "name": "Discord",
@@ -903,10 +903,10 @@
             "id": "group",
             "versioned_id": "group",
             "settings": {
+                "id_counter": 0,
                 "custom_size": true,
                 "cx": 2560,
                 "cy": 1440,
-                "id_counter": 0,
                 "items": [
                     {
                         "name": "Taskbar",
@@ -1383,10 +1383,10 @@
             "id": "group",
             "versioned_id": "group",
             "settings": {
+                "id_counter": 0,
                 "custom_size": true,
                 "cx": 411,
                 "cy": 608,
-                "id_counter": 0,
                 "items": [
                     {
                         "name": "ChatWidget.png",
@@ -1465,11 +1465,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 8.55908203125,
-                            "y": 51.33087158203125
+                            "y": 51.330810546875
                         },
                         "pos_rel": {
                             "x": -1.765890121459961,
-                            "y": -0.9287071228027344
+                            "y": -0.9287071824073792
                         },
                         "scale": {
                             "x": 1.0,
@@ -1520,11 +1520,11 @@
                         "group_item_backup": false,
                         "pos": {
                             "x": 346.55377197265625,
-                            "y": 508.54754638671875
+                            "y": 508.547607421875
                         },
                         "pos_rel": {
                             "x": -1.2964531183242798,
-                            "y": -0.2936839461326599
+                            "y": -0.29368388652801514
                         },
                         "scale": {
                             "x": 2.909090757369995,
@@ -1587,10 +1587,10 @@
             "id": "group",
             "versioned_id": "group",
             "settings": {
+                "id_counter": 0,
                 "custom_size": true,
                 "cx": 400,
                 "cy": 178,
-                "id_counter": 0,
                 "items": [
                     {
                         "name": "MusicWidget.png",
@@ -1734,10 +1734,10 @@
             "id": "group",
             "versioned_id": "group",
             "settings": {
+                "id_counter": 0,
                 "custom_size": true,
                 "cx": 401,
                 "cy": 401,
-                "id_counter": 0,
                 "items": [
                     {
                         "name": "WebcamWidget",
@@ -1873,153 +1873,6 @@
             "monitoring_type": 0,
             "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
             "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "Drawing Widget",
-            "uuid": "63b6b0b9-7253-47e7-b77b-58b86088ff5f",
-            "id": "group",
-            "versioned_id": "group",
-            "settings": {
-                "id_counter": 0,
-                "custom_size": true,
-                "cx": 700,
-                "cy": 700,
-                "items": [
-                    {
-                        "name": "PaintWidget.png",
-                        "source_uuid": "aab707a9-0c2a-4d82-8670-b80c3c022f51",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 9,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "pos_rel": {
-                            "x": -1.7777777910232544,
-                            "y": -1.0
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "point",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "paint.html",
-                        "source_uuid": "8e877845-2ce1-4d21-95df-a308c0ff886e",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 11,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 4.00048828125,
-                            "y": 50.00006103515625
-                        },
-                        "pos_rel": {
-                            "x": -1.772221565246582,
-                            "y": -0.9305554628372192
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "point",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    }
-                ]
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.show_scene_item.9": [],
-                "libobs.hide_scene_item.9": [],
-                "libobs.show_scene_item.11": [],
-                "libobs.hide_scene_item.11": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "canvas_uuid": "6c69626f-6273-4c00-9d88-c5136d61696e",
-            "private_settings": {}
         }
     ],
     "quick_transitions": [
@@ -2068,6 +1921,55 @@
     },
     "modules": {
         "ShadowReplaySim.CaptureReplay": [],
+        "scripts-tool": [
+            {
+                "path": "C:/Program Files/obs-studio/data/obs-plugins/frontend-tools/scripts/visibility-timer.lua",
+                "settings": {
+                    "mode": "mode_repeat",
+                    "source": "Sub = Reset",
+                    "duration_ms": 15000,
+                    "hold_ms": 15000
+                }
+            },
+            {
+                "path": "O:/Projects/hoofer-obs-setup/Scripts/windows-xp-autoframe.lua",
+                "settings": {
+                    "source_window_name": "Roblox S",
+                    "source_image_name": "TestImage",
+                    "padding": 0,
+                    "pad_r": 23,
+                    "pad_l": 5,
+                    "pad_b": 23,
+                    "pad_t": 51,
+                    "source_windows_csv": "Roblox S,Blender,VSC,Roblox,Figma,Godot",
+                    "source_browser_name": "XP Window Outline"
+                }
+            }
+        ],
+        "output-timer": {
+            "streamTimerHours": 0,
+            "streamTimerMinutes": 0,
+            "streamTimerSeconds": 30,
+            "recordTimerHours": 0,
+            "recordTimerMinutes": 0,
+            "recordTimerSeconds": 30,
+            "autoStartStreamTimer": false,
+            "autoStartRecordTimer": false,
+            "pauseRecordTimer": true
+        },
+        "auto-scene-switcher": {
+            "interval": 300,
+            "non_matching_scene": "",
+            "switch_if_not_matching": false,
+            "active": false,
+            "switches": []
+        },
+        "captions": {
+            "source": "",
+            "enabled": false,
+            "lang_id": 1033,
+            "provider": "mssapi"
+        },
         "advanced-scene-switcher": {
             "sceneGroups": [],
             "macros": [
@@ -4058,8 +3960,8 @@
                 }
             ],
             "saveWindowGeo": false,
-            "windowPosX": 2837,
-            "windowPosY": 468,
+            "windowPosX": 1438,
+            "windowPosY": 372,
             "windowWidth": 1000,
             "windowHeight": 600,
             "macroListMacroEditSplitterPosition": [
@@ -4074,56 +3976,7 @@
             "websocketConnections": [],
             "twitchConnections": [],
             "actionQueues": []
-        },
-        "auto-scene-switcher": {
-            "interval": 300,
-            "non_matching_scene": "",
-            "switch_if_not_matching": false,
-            "active": false,
-            "switches": []
-        },
-        "captions": {
-            "source": "",
-            "enabled": false,
-            "lang_id": 1033,
-            "provider": "mssapi"
-        },
-        "output-timer": {
-            "streamTimerHours": 0,
-            "streamTimerMinutes": 0,
-            "streamTimerSeconds": 30,
-            "recordTimerHours": 0,
-            "recordTimerMinutes": 0,
-            "recordTimerSeconds": 30,
-            "autoStartStreamTimer": false,
-            "autoStartRecordTimer": false,
-            "pauseRecordTimer": true
-        },
-        "scripts-tool": [
-            {
-                "path": "C:/Program Files/obs-studio/data/obs-plugins/frontend-tools/scripts/visibility-timer.lua",
-                "settings": {
-                    "mode": "mode_repeat",
-                    "source": "Sub = Reset",
-                    "duration_ms": 15000,
-                    "hold_ms": 15000
-                }
-            },
-            {
-                "path": "O:/Projects/hoofer-obs-setup/Scripts/windows-xp-autoframe.lua",
-                "settings": {
-                    "pad_b": 23,
-                    "pad_l": 5,
-                    "pad_r": 23,
-                    "pad_t": 51,
-                    "padding": 0,
-                    "source_browser_name": "XP Window Outline",
-                    "source_image_name": "TestImage",
-                    "source_window_name": "Roblox S",
-                    "source_windows_csv": "Roblox S,Blender,VSC,Roblox,Figma,Godot"
-                }
-            }
-        ]
+        }
     },
     "resolution": {
         "x": 2560,
@@ -4291,8 +4144,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "custom_size": false,
                 "id_counter": 10,
+                "custom_size": false,
                 "items": [
                     {
                         "name": "Background",
@@ -5257,11 +5110,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 100.869873046875,
-                            "y": 524.1651611328125
+                            "y": 524.1650390625
                         },
                         "pos_rel": {
                             "x": -1.6376807689666748,
-                            "y": -0.2719928026199341
+                            "y": -0.2719929814338684
                         },
                         "scale": {
                             "x": 1.0,
@@ -5312,11 +5165,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 609.095458984375,
-                            "y": 1211.494140625
+                            "y": 1211.4942626953125
                         },
                         "pos_rel": {
                             "x": -0.9318118691444397,
-                            "y": 0.6826307773590088
+                            "y": 0.6826308965682983
                         },
                         "scale": {
                             "x": 2.909090757369995,
@@ -5678,16 +5531,16 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "chatlog": false,
-                "extents": false,
+                "vertical": false,
                 "gradient": true,
                 "outline": true,
+                "extents": false,
                 "text": "BRB",
-                "vertical": false,
                 "font": {
                     "face": "Segoe UI",
-                    "flags": 1,
+                    "style": "Bold",
                     "size": 500,
-                    "style": "Bold"
+                    "flags": 1
                 },
                 "align": "center",
                 "valign": "center",
@@ -5757,11 +5610,11 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "chatlog": false,
-                "extents": false,
+                "vertical": false,
                 "gradient": true,
                 "outline": true,
+                "extents": false,
                 "text": "bye\n:)",
-                "vertical": false,
                 "font": {
                     "face": "Gotham Bold",
                     "flags": 0,
@@ -5839,8 +5692,8 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "O:/Projects/hoofer-obs-setup/Widgets/ChatWidget.png",
-                "undo_suuid": "3f255b83-118b-49cc-bc67-06cdec2cc41e"
+                "undo_suuid": "3f255b83-118b-49cc-bc67-06cdec2cc41e",
+                "file": "O:/Projects/hoofer-obs-setup/Widgets/ChatWidget.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -5867,8 +5720,8 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "gradient": true,
-                "outline": true,
                 "text": "discord.gg/Typical",
+                "outline": true,
                 "font": {
                     "face": "Gotham Bold",
                     "flags": 0,
@@ -5905,8 +5758,8 @@
             "id": "wasapi_process_output_capture",
             "versioned_id": "wasapi_process_output_capture",
             "settings": {
-                "priority": 2,
-                "window": "#22off-topic | Typical Internal - Discord:Chrome_WidgetWin_1:Discord.exe"
+                "window": "#22off-topic | Typical Internal - Discord:Chrome_WidgetWin_1:Discord.exe",
+                "priority": 2
             },
             "mixers": 255,
             "sync": 0,
@@ -5996,8 +5849,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
+                "id_counter": 7,
                 "custom_size": false,
-                "id_counter": 11,
                 "items": [
                     {
                         "name": "Background 2",
@@ -6327,9 +6180,7 @@
                         "hide_transition": {
                             "duration": 0
                         },
-                        "private_settings": {
-                            "collapsed": true
-                        }
+                        "private_settings": {}
                     },
                     {
                         "name": "ChatWidget.png",
@@ -6549,176 +6400,7 @@
                         "hide_transition": {
                             "duration": 0
                         },
-                        "private_settings": {
-                            "collapsed": true
-                        }
-                    },
-                    {
-                        "name": "PaintWidget.png",
-                        "source_uuid": "aab707a9-0c2a-4d82-8670-b80c3c022f51",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 9,
-                        "group_item_backup": true,
-                        "pos": {
-                            "x": 1024.0,
-                            "y": 176.0
-                        },
-                        "pos_rel": {
-                            "x": -0.35555556416511536,
-                            "y": -0.7555555701255798
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.661428451538086,
-                            "y": 1.661428451538086
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "point",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
                         "private_settings": {}
-                    },
-                    {
-                        "name": "paint.html",
-                        "source_uuid": "8e877845-2ce1-4d21-95df-a308c0ff886e",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 11,
-                        "group_item_backup": true,
-                        "pos": {
-                            "x": 1030.646484375,
-                            "y": 259.071533203125
-                        },
-                        "pos_rel": {
-                            "x": -0.3463243246078491,
-                            "y": -0.6401784420013428
-                        },
-                        "scale": {
-                            "x": 1.0,
-                            "y": 1.0
-                        },
-                        "scale_rel": {
-                            "x": 1.661428451538086,
-                            "y": 1.661428451538086
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "point",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {}
-                    },
-                    {
-                        "name": "Drawing Widget",
-                        "source_uuid": "63b6b0b9-7253-47e7-b77b-58b86088ff5f",
-                        "visible": true,
-                        "locked": false,
-                        "rot": 0.0,
-                        "scale_ref": {
-                            "x": 2560.0,
-                            "y": 1440.0
-                        },
-                        "align": 5,
-                        "bounds_type": 0,
-                        "bounds_align": 0,
-                        "bounds_crop": false,
-                        "crop_left": 0,
-                        "crop_top": 0,
-                        "crop_right": 0,
-                        "crop_bottom": 0,
-                        "id": 8,
-                        "group_item_backup": false,
-                        "pos": {
-                            "x": 1024.0,
-                            "y": 176.0
-                        },
-                        "pos_rel": {
-                            "x": -0.35555556416511536,
-                            "y": -0.7555555701255798
-                        },
-                        "scale": {
-                            "x": 1.6614285707473755,
-                            "y": 1.6614285707473755
-                        },
-                        "scale_rel": {
-                            "x": 1.6614285707473755,
-                            "y": 1.6614285707473755
-                        },
-                        "bounds": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "bounds_rel": {
-                            "x": 0.0,
-                            "y": 0.0
-                        },
-                        "scale_filter": "disable",
-                        "blend_method": "default",
-                        "blend_type": "normal",
-                        "show_transition": {
-                            "duration": 0
-                        },
-                        "hide_transition": {
-                            "duration": 0
-                        },
-                        "private_settings": {
-                            "collapsed": false
-                        }
                     }
                 ]
             },
@@ -6744,9 +6426,7 @@
                 "libobs.show_scene_item.6": [],
                 "libobs.hide_scene_item.6": [],
                 "libobs.show_scene_item.7": [],
-                "libobs.hide_scene_item.7": [],
-                "libobs.show_scene_item.8": [],
-                "libobs.hide_scene_item.8": []
+                "libobs.hide_scene_item.7": []
             },
             "deinterlace_mode": 0,
             "deinterlace_field_order": 0,
@@ -6793,8 +6473,8 @@
             "id": "window_capture",
             "versioned_id": "window_capture",
             "settings": {
-                "priority": 2,
-                "window": "Design (V3) - Figma:Chrome_WidgetWin_1:Figma.exe"
+                "window": "Design (V3) - Figma:Chrome_WidgetWin_1:Figma.exe",
+                "priority": 2
             },
             "mixers": 0,
             "sync": 0,
@@ -6859,11 +6539,11 @@
             "versioned_id": "text_gdiplus_v2",
             "settings": {
                 "chatlog": false,
-                "extents": false,
+                "vertical": false,
                 "gradient": true,
                 "outline": true,
+                "extents": false,
                 "text": "hi\n:D",
-                "vertical": false,
                 "font": {
                     "face": "Gotham Bold",
                     "flags": 0,
@@ -6933,67 +6613,6 @@
             "versioned_id": "image_source",
             "settings": {
                 "file": "O:/Projects/hoofer-obs-setup/Widgets/MusicWidget.png"
-            },
-            "mixers": 0,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {},
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "paint.html",
-            "uuid": "8e877845-2ce1-4d21-95df-a308c0ff886e",
-            "id": "browser_source",
-            "versioned_id": "browser_source",
-            "settings": {
-                "is_local_file": true,
-                "local_file": "O:/Projects/hoofer-obs-setup/Browsers/windows-paint/index.html",
-                "width": 692,
-                "height": 620
-            },
-            "mixers": 255,
-            "sync": 0,
-            "flags": 0,
-            "volume": 1.0,
-            "balance": 0.5,
-            "enabled": true,
-            "muted": false,
-            "push-to-mute": false,
-            "push-to-mute-delay": 0,
-            "push-to-talk": false,
-            "push-to-talk-delay": 0,
-            "hotkeys": {
-                "libobs.mute": [],
-                "libobs.unmute": [],
-                "libobs.push-to-mute": [],
-                "libobs.push-to-talk": [],
-                "ObsBrowser.Refresh": []
-            },
-            "deinterlace_mode": 0,
-            "deinterlace_field_order": 0,
-            "monitoring_type": 0,
-            "private_settings": {}
-        },
-        {
-            "prev_ver": 536870916,
-            "name": "PaintWidget.png",
-            "uuid": "aab707a9-0c2a-4d82-8670-b80c3c022f51",
-            "id": "image_source",
-            "versioned_id": "image_source",
-            "settings": {
-                "file": "O:/Projects/hoofer-obs-setup/Widgets/PaintWidget.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -7135,12 +6754,12 @@
                         "id": 81,
                         "group_item_backup": false,
                         "pos": {
-                            "x": 426.0,
-                            "y": 134.0
+                            "x": 422.0,
+                            "y": 105.0
                         },
                         "pos_rel": {
-                            "x": -1.1861110925674438,
-                            "y": -0.8140038251876831
+                            "x": -1.1916667222976685,
+                            "y": -0.8538233637809753
                         },
                         "scale": {
                             "x": 1.0,
@@ -8609,7 +8228,7 @@
                             "duration": 0
                         },
                         "private_settings": {
-                            "collapsed": false
+                            "collapsed": true
                         }
                     },
                     {
@@ -8943,7 +8562,7 @@
                             "duration": 0
                         },
                         "private_settings": {
-                            "collapsed": false
+                            "collapsed": true
                         }
                     },
                     {
@@ -9245,8 +8864,8 @@
             "id": "dshow_input",
             "versioned_id": "dshow_input",
             "settings": {
-                "last_video_device_id": "Camera (NVIDIA Broadcast):",
-                "video_device_id": "Camera (NVIDIA Broadcast):"
+                "video_device_id": "Camera (NVIDIA Broadcast):",
+                "last_video_device_id": "Camera (NVIDIA Broadcast):"
             },
             "mixers": 255,
             "sync": 0,
@@ -9277,8 +8896,8 @@
             "id": "window_capture",
             "versioned_id": "window_capture",
             "settings": {
-                "priority": 2,
-                "window": "Welcome - Visual Studio Code:Chrome_WidgetWin_1:Code.exe"
+                "window": "Welcome - Visual Studio Code:Chrome_WidgetWin_1:Code.exe",
+                "priority": 2
             },
             "mixers": 0,
             "sync": 0,
@@ -9309,8 +8928,8 @@
             "id": "scene",
             "versioned_id": "scene",
             "settings": {
-                "custom_size": false,
                 "id_counter": 5,
+                "custom_size": false,
                 "items": [
                     {
                         "name": "Background 2",
@@ -9666,11 +9285,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 192.999755859375,
-                            "y": 440.0002136230469
+                            "y": 440.0001220703125
                         },
                         "pos_rel": {
                             "x": -1.5097225904464722,
-                            "y": -0.3888885974884033
+                            "y": -0.38888871669769287
                         },
                         "scale": {
                             "x": 1.0,
@@ -9721,11 +9340,11 @@
                         "group_item_backup": true,
                         "pos": {
                             "x": 785.3355102539062,
-                            "y": 1241.6534423828125
+                            "y": 1241.653564453125
                         },
                         "pos_rel": {
                             "x": -0.687034010887146,
-                            "y": 0.7245186567306519
+                            "y": 0.724518895149231
                         },
                         "scale": {
                             "x": 2.909090757369995,
@@ -9905,8 +9524,8 @@
             "id": "image_source",
             "versioned_id": "image_source",
             "settings": {
-                "file": "O:/Projects/hoofer-obs-setup/Widgets/CamWidget.png",
-                "undo_suuid": "3f255b83-118b-49cc-bc67-06cdec2cc41e"
+                "undo_suuid": "3f255b83-118b-49cc-bc67-06cdec2cc41e",
+                "file": "O:/Projects/hoofer-obs-setup/Widgets/CamWidget.png"
             },
             "mixers": 0,
             "sync": 0,
@@ -9936,8 +9555,8 @@
                 "live_title": "index.html - Visual Studio Code",
                 "local_file": "O:/Projects/hoofer-obs-setup/Browsers/windows-xp-frame/index.html",
                 "url": "\"E:\\Downloads\\windows-xp-frame\\index.html\"",
-                "width": 2115,
-                "height": 1105,
+                "width": 2112,
+                "height": 1175,
                 "css": "body { background: transparent; margin: 0; overflow: hidden; }"
             },
             "mixers": 255,
